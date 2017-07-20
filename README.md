@@ -5,4 +5,4 @@
 
 继承View 并重写onDraw（）方法，需要自己支持wrap_content和padding，因为View在布局中使用wrap_content,那么它的specMode就是AT_MOST模式，在这种模式下，它的宽高都是specSize 。此时specSize就是parentSize，也就是父容器的剩余空间大小。所以我们需要onMeasure中进行判断，设置wrap_content的初始值。
 
-自定义view的xml属性，这个例子是一个circle_color名字的color属性，在构造函数时加载和解析它。
+自定义view的xml属性，这个例子是一个名为circle_color的color属性，在构造函数时加载和解析它。
